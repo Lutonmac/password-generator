@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="output.css" />
+    
+  </head>
+  <body>
+    <main class="bg-neutral-900 h-screen grid justify-center p-32">
+      <div class="grid grid-cols-1 justify-center  bg-[#7344a0] rounded-md shadow-md shadow-[#7f5ec3] border-solid border-[#cf71f0] border-[1px] p-48">
+        <ul class="">
+          <li>
+            <input type="radio" name="pwd" id="include" checked />
+            <label for="include">Include special charaters</label>
+          </li>
+          <li>
+            <input type="radio" name="pwd" id="exclude" />
+            <label for="exclude">Exclude special charaters</label>
+          </li>
+          <li>
+            <p id="password" class="p-2 bg-transparent border-solid border-[1px] border-[#cf71f0] rounded-md shadow-md shadow-[#ce70f0]"></p>
+          </li>
+          <li>
+            <label for="password-length">Password Length:</label>
+            <input type="number" id="password-length" value="8" class="rounded-md p-1" />
+          </li>
+          <li class="p-1">
+            <input type="button" value="generate password" id="generate-button" class="p-1 bg-transparent border-solid border-[1px] border-[#cf71f0] rounded-md shadow-md shadow-[#ce70f0]"/>
+          </li>
+        </ul>
+      </div>
+      <div></div>
+    </main>
+   <script src="index.js"></script>
+  </body>
+</html>
